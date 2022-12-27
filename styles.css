@@ -6,3 +6,100 @@ dark-blue - #134d71;
 white - #ffffff;
 black - #000000;
 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+}
+
+html {
+    min-height: 100%;
+    background: url("assets/cherry-blossom.jpeg")no-repeat center;
+    background-size: cover;
+    font-family: "Quicksand", sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+.fade-out {
+    opacity: 0
+}
+
+.container {
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+
+    margin: 2rem;
+}
+.container h1 {
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0 5px 10px rgba(0,0,0, 0.8);
+}
+.type-choice {
+    background: #FFF;
+    height: min(100px, 20vh);
+    width: max(250px, 60vw);
+
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0, 0.4);
+}
+form {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.radio-button {
+    justify-content: space-around;
+    align-items: center;
+}
+.submit-button {
+    width: 50%;
+    align-self: center;
+    padding: 0.3rem;
+
+    background: pink;
+    border:none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0, 0.4);
+
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 0 5px rgba(0,0,0, 0.3);
+}
+.submit-button:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 5px rgba(0,0,0, 0.5);
+}
+.display-window {
+    background: #FFF;
+    min-height: 150px;
+    width: 80vw;
+
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0, 0.4);
+
+    justify-content: center;
+    align-items: center;
+}
+.display-window img {
+    width: 100px;
+}
+.display-window :first-child {
+    transition: opacity 1s;
+    color: pink;
+    font-size: 2em;
+    font-style: italic;
+    text-shadow: 1px 1px 3px rgba(0,0,0, 0.3);
+
+}
