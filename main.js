@@ -7,7 +7,7 @@ const addMessageButton = document.querySelector(".add-message")
 
 const affirmations = ["When faced with a problem, just say hisashiburi dana", "if the div won't center, just close the computer", "On passe notre vie à tout prendre, au final on va tout rendre"]
 const mantras = ["just act like you know", "🧎"]
-const randomIndex = array => {
+const randomElement = array => {
     return array[Math.floor(Math.random() * array.length)]
 }
 
@@ -47,13 +47,13 @@ window.addEventListener("DOMContentLoaded", () => {
                 content.parentNode.removeChild(content)
                 if (mantra.checked) {
                     let tag = document.createElement("p")
-                    let node = document.createTextNode(`"${randomIndex(mantras)}"`)
+                    let node = document.createTextNode(`"${randomElement(mantras)}"`)
                     tag.appendChild(node)
                     displayWindow.appendChild(tag)
                 }
                 if (affirmation.checked) {
                     let tag = document.createElement("p")
-                    let node = document.createTextNode(`"${randomIndex(affirmations)}"`)
+                    let node = document.createTextNode(`"${randomElement(affirmations)}"`)
                     tag.appendChild(node)
                     displayWindow.appendChild(tag)
                 }
@@ -99,5 +99,6 @@ window.addEventListener("DOMContentLoaded", () => {
         } else {
             alert("what is the type of your message")
         }
+        addMessageDiv.classList.toggle("none")
     })
 });
