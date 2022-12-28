@@ -51,9 +51,16 @@ html {
     border-radius: 15px;
     box-shadow: 0 5px 10px rgba(0,0,0, 0.4);
 }
-form {
-    height: 100%;
+.reset {
+    padding: 3px 1rem;
 
+    border: none;
+    border-radius: 15px;
+    background: #EEE;
+
+    cursor: pointer;
+}
+form {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -63,9 +70,10 @@ form {
     align-items: center;
 }
 .submit-button {
-    width: 50%;
+    width: max(150px, 50%);
     align-self: center;
     padding: 0.3rem;
+    margin: 0.3rem;
 
     background: pink;
     border:none;
@@ -79,6 +87,7 @@ form {
 .submit-button:hover {
     text-decoration: underline;
     text-shadow: 0 0 5px rgba(0,0,0, 0.5);
+    cursor: pointer;
 }
 .display-window {
     background: #FFF;
