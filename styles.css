@@ -26,6 +26,9 @@ html {
 .flex {
     display: flex;
 }
+.none {
+    display: none;
+}
 .fade-out {
     opacity: 0
 }
@@ -51,7 +54,7 @@ html {
     border-radius: 15px;
     box-shadow: 0 5px 10px rgba(0,0,0, 0.4);
 }
-.reset {
+.reset, .add-message{
     padding: 3px 1rem;
 
     border: none;
@@ -110,5 +113,21 @@ form {
     font-size: 2em;
     font-style: italic;
     text-shadow: 1px 1px 3px rgba(0,0,0, 0.3);
+}
 
+.add-message-popup {
+    background: #FFF;
+    min-height: 150px;
+    width: 50vw;
+    gap: 4rem;
+
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0, 0.4);
+
+    justify-content: center;
+}
+
+.addForm-container {
+    gap: 1rem
 }
