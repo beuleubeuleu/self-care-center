@@ -31,8 +31,10 @@
 
             <button class="submit-button" type="submit"> Show Message </button>
         </form>
-        <button class="reset"> Reset Message </button>
-        <button class="add-message"> Add Message </button>
+        <div class="bouton-option">
+            <button class="reset"> Reset Message </button>
+            <button class="add-message"> Add Message </button>
+        </div>
     </div>
 
     <div class="display-window flex">
@@ -43,7 +45,7 @@
         <form class="addForm-container flex" id="add-form">
             <input type="text" name="add" id="message" placeholder="Type your message yes">
 
-            <div class="radio-button">
+            <div class="radio-button flex">
                 <div>
                     <input type="radio" name="add" id="add-affirmation">
                     <label for="add-affirmation">Affirmation</label>
