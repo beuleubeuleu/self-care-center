@@ -8,8 +8,16 @@ const addMessageButton = document.querySelector(".add-message")
 
 const addMessageDiv = document.querySelector(".add-message-popup")
 
-const affirmations = ["When faced with a problem, just say hisashiburi dana", "if the div won't center, just close the computer", "On passe notre vie à tout prendre, au final on va tout rendre"]
-const mantras = ["just act like you know", "🧎"]
+const affirmations = ["When faced with a problem, just say hisashiburi dana",
+    "if the div won't center, just close the computer",
+    "On passe notre vie à tout prendre, au final on va tout rendre",
+    "A life without pain, Is a life without growth",
+    "La nuit porte conseil que quand tu dors"]
+const mantras = ["just act like you know",
+                "take a step forward",
+                "pourquoi t'as commencé",
+                "j'me lève et j'me bats",
+                "Le monde tourne"]
 
 
 const randomElement = array => {
